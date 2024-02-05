@@ -1,24 +1,9 @@
 const { spawn } = require("child_process");
+const path = require("path");
 
-const runtime = process.env.npm_config_cmake_node_runtime || "node";
-const runtimeVersion =
-  process.env.npm_config_cmake_node_runtimeversion || process.version;
-const arch = process.env.npm_config_cmake_node_arch || process.arch;
-
-const runner = spawn(
-  "npx",
-  [
-    "cmake-js",
-    "compile",
-    "-r",
-    runtime,
-    "-v",
-    runtimeVersion.replace("v", ""),
-    "-a",
-    arch,
-  ],
-  { stdio: "inherit" }
-);
+const runner = spawn("node", [path.join(__dirname, "compile.js")], {
+  stdio: "inherit",
+});
 
 runner.on("close", () => {
   console.log("[mmkv-node-bindings] compile close");

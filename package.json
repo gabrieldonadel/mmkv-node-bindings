@@ -20,7 +20,7 @@
   "scripts": {
     "postinstall": "node ./scripts/postinstall.js",
     "build": "cmake-js build",
-    "compile": "cmake-js compile",
+    "compile": "node ./scripts/compile.js",
     "test": "npm run build && jest"
   },
   "repository": {
