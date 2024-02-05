@@ -39,3 +39,4 @@ declare class MMKVModule {
 }
 
 export { MMKVModule, MMKVModuleOptions };
+export default MMKVModule;
