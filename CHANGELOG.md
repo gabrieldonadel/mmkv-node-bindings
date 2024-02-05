@@ -1,4 +1,8 @@
-# nodejs-mmkv
+# mmkv-node-bindings
+
+## v0.2.0
+
+- feat: Add logLevel option #5
 
 ## v0.1.1
 

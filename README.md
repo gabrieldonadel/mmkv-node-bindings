@@ -1,6 +1,6 @@
-# nodejs-mmkv
+# mmkv-node-bindings
 
-Base on [Tencent MMKV](https://github.com/Tencent/MMKV) high-performance key-value storage framework. Implement Node.js.
+A fork of nodejs-mmkv, but with multi architecture support. Based on [Tencent MMKV](https://github.com/Tencent/MMKV) high-performance key-value storage framework.
 
 # Dependencies
 
@@ -11,11 +11,11 @@ Base on [Tencent MMKV](https://github.com/Tencent/MMKV) high-performance key-val
 # Install
 
 ```
-npm install --save-dev nodejs-mmkv
+npm install --save-dev mmkv-node-bindings
 
 // or
 
-yarn add nodejs-mmkv -S
+yarn add mmkv-node-bindings -S
 ```
 
 You can use it on `Electron`. The first step to setup `cmake` compile configuration:
@@ -39,7 +39,7 @@ npm install
 # Usage
 
 ```bash
-const MMKVModule = require("nodejs-mmkv");
+const MMKVModule = require("mmkv-node-bindings");
 const path = require("path");
 
 const mmkv = new MMKVModule({

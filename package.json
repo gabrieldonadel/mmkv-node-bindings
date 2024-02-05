@@ -1,6 +1,6 @@
 {
-  "name": "nodejs-mmkv",
-  "version": "0.1.1",
+  "name": "mmkv-node-bindings",
+  "version": "0.2.0",
   "description": "Base on Tencent MMKV high-performance key-value storage framework. Implement Node.js",
   "main": "index.js",
   "type": "commonjs",
@@ -23,15 +23,14 @@
     "compile": "cmake-js compile",
     "test": "npm run build && jest"
   },
-  "author": "Kevin Chan",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jakexchan/node-mmkv.git"
+    "url": "git+https://github.com/gabrieldonadel/mmkv-node-bindings.git"
   },
   "bugs": {
-    "url": "https://github.com/jakexchan/node-mmkv/issues"
+    "url": "https://github.com/gabrieldonadel/mmkv-node-bindings/issues"
   },
-  "homepage": "https://github.com/jakexchan/node-mmkv#readme",
+  "homepage": "https://github.com/gabrieldonadel/mmkv-node-bindings#readme",
   "license": "MIT",
   "dependencies": {
     "bindings": "^1.5.0",
